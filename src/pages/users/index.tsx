@@ -36,7 +36,7 @@ export default function UserList() {
 
   const isWideVersion = useBreakpointValue({ base: false, lg: true })
 
-  async function handlePrefetchUser(userId: number) {
+  async function handlePrefetchUser(userId: string) {
     await queryClient.prefetchQuery(
       ["user", userId],
       async () => {

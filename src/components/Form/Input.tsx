@@ -23,7 +23,7 @@ const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
       <ChakraInput
         name={name}
         id={name}
-        type="email"
+        type={name}
         focusBorderColor="pink.500"
         bgColor="gray.900"
         variant="filled"
